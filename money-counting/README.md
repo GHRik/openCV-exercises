@@ -24,7 +24,7 @@ In this place you will find how to count object on the images. The most easier e
 Okey so now step to step:
 1. Load image - it is easy , we must load image to count object on this image, nothing more to say :)
 <p align="center">
-   <img src="https://github.com/GHRik/openCV-exercises/blob/money-counting/money-counting/images/money2.jpg" width="50%" height="50%" alt="money2.jpg" />
+   <img src="https://github.com/GHRik/openCV-exercises/blob/money-counting/money-counting/images/example/image_example.png" width="50%" height="50%" alt="money2.jpg" />
 </p>
 2. Blur image - we should have uniform coins, it means coins should have similar color in center of the money and on the edge.
 Why whe should have similary color? Look on point 4 ;).
