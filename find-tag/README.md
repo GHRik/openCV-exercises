@@ -1,4 +1,4 @@
-# Counting money from image
+# Find marker on image
 
 ## Table of contents
 1. [ Description ](#repo)
