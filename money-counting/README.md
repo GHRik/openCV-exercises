@@ -43,9 +43,9 @@ Why whe should have similary color? Look on point 4 ;).
 <p align="center">
    <img src="https://github.com/GHRik/openCV-exercises/blob/money-counting/money-counting/images/examples/opening.png" width="50%" height="50%" alt="opening.jpg" />
 </p>
-7. Edge filtering - the next big issue to think about it. It a lot of edge detect algorythm which should i use? The same like above.... It depends. Experiment on your own ;).
-8. If you have a selected contures it is easy to count it</br>
-9. So the printing only left.
+6. Edge filtering - the next big issue to think about it. It a lot of edge detect algorythm which should i use? The same like above.... It depends. Experiment on your own ;).</br>
+7. If you have a selected contures it is easy to count it</br>
+8. So the printing only left.
 
 <a name="img"></a>
 ## Examples money which we will count
