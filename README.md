@@ -10,7 +10,10 @@
 <a name="repo"></a>
 ## Description
 
-This repo was created to improve my C++ experiance(and maybe a small part of cmake). If you want to get knownleadge from my task which will be done on this repo you should have small C++ programing knownledge. The task will be some more difficult than "start c++ programing course", but not rocket science ;).
+This repo was created to improve my OpenCV experience. In this repo i will commit a small project sperate on directory.
+Probably all of directory will have own README with theroy and how functions is implemented in code.
+To use this repo you should have a small knownledge in image processing. For example with
+morphology operation. I suppose this repo will not be a "rocket science", so dont wory about it :D
 
 <a name="tech"></a>
 ## Technology
@@ -40,6 +43,6 @@ In README you will see:
 2. How it works(include theory step by step)
 3. Results(gif/viedo)
 
-Money conting - is project which will show how to counting coins working
-Finding tag - is project which will show how to use/detect own markers
-AruCo marker - is project which will show how to use/detect aruCo markers
+Money conting - is project which will show how to counting coins working<br />
+Finding tag - is project which will show how to use/detect own markers<br />
+AruCo marker - is project which will show how to use/detect aruCo markers<br />
