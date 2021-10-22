@@ -13,7 +13,7 @@
 This repo was created to improve my OpenCV experience. In this repo i will commit a small project sperate on directory.
 Probably all of directory will have own README with theroy and how functions is implemented in code.
 To use this repo you should have a small knownledge in image processing. For example with
-morphology operation. I suppose this repo will not be a "rocket science", so dont wory about it :D
+morphology operation. I suppose this repo will not be a "rocket science", so dont wory about it.
 
 <a name="tech"></a>
 ## Technology
