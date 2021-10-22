@@ -33,11 +33,11 @@ if dont work [visit here](https://github.com/GHRik/openCV-exercises/blob/main/fi
 Okey, then step by step:
 
 1. Load image or capture frame from camera
-This step is very easy if you want to load image you should use:
+if you want to load image you should use:
 ```python
 image = cv2.imread("<location_of_image>")
 ```
-but if you want to capture frame from your camera it will be much complicated
+if you want to capture frame from your camera:
 ```python
 #with this line you will select which camera you will use
 #i have only one camera, so 0 
@@ -117,7 +117,6 @@ This short video is a result(if gif dont work: [video here](https://www.youtube.
 </p>
 
 This code is working when is a more than 1 marker on frame:</br>
-
 <p align="center">
     Image:
    <img src="https://github.com/GHRik/openCV-exercises/blob/aruCo-marker/aruCo-marker/images/arucoMarker.jpg" width="75%" height="50%" alt="marker.gif" />
