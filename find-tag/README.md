@@ -32,11 +32,11 @@ looks like please visit: [here](https://github.com/GHRik/openCV-exercises/blob/m
 Okey then step by step:
 
 1. Load image or capture frame from camera
-This step is very easy if you want to load image you should use:
+if you want to load image you should use:
 ```python
 image = cv2.imread("<location_of_image>")
 ```
-but if you want to capture frame from your camera it will be much complicated
+if you want to capture frame from your camera:
 ```python
 #with this line you will select which camera you will use
 #i have only one camera, so 0 
@@ -58,15 +58,13 @@ cap = cv2.VideoCapture(0)
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 ```
 2. Get know what will be your marker
-Get up and look around. Grab a object with grab a large item of bright solid color.
-It could be cup, bottle, scarf, board, bag, screw cap etc. but 
-remember a solid bright color. 
+It could be cup, bottle, scarf, board, bag, screw cap etc. The best marker is
+object with solid and bright color. It is easier to keying this object from
+background/
 
 3. Get binary image from loaded image or frame
-If you have your marker look on it. What color there is?
-If you have color , you have to make a binary image/frame from
-this color you have. You have to make your color zero and all the others - one.
-To better grab color use HSV color pallet.
+To properly keying from background you have to properly set mask with marker color.
+Example from below shows an example for the color red.
 ```python
 	#convert RGB to HSV pallete to better grab solid color.
 	img_hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
@@ -95,9 +93,8 @@ To better grab color use HSV color pallet.
 
 ```
 4. Get contures of probably size your marker
-Now if oyu have binary image/frame you should easy to grep contures,
-but remember if you wrong pick your mask you will have a lot of another
-object in binary image/frame.
+If properly mask was used your marker will be only one big object on binary image/frame.
+If mask was wrong binary image/frame will have a lot of another object than your marker.
 
 ```python
 contures, hierarchy = cv2.findContours(binary, cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
@@ -105,7 +102,7 @@ contures, hierarchy = cv2.findContours(binary, cv2.RETR_TREE, cv2.CHAIN_APPROX_N
 
 5. Using theory of "moment image" calculate center of contures
 To locate a center of our contures we have to using [moment image theory](https://en.wikipedia.org/wiki/Image_moment).
-The best thing is a opencv make a moment calculus for us ;).
+OpenCV have a method to calculate moment of image.
 ```python
 		M = cv2.moments(contures[i])
                 cX = int(M["m10"] / M["m00"])
@@ -114,7 +111,6 @@ The best thing is a opencv make a moment calculus for us ;).
 where "c" is "center"
 
 6. Insert a small point on the center image
-If we have a X and Y of center is easy to point a center on our image:
 ```python
 circle =  cv2.circle(frame.copy(), (cX, cY), 1, (255, 255, 255), 20)
 ```
@@ -136,4 +132,3 @@ This short video is a result(if gif dont work: [video here](https://www.youtube.
 <p align="center">
    <img src="https://github.com/GHRik/openCV-exercises/blob/find-tag/find-tag/images/openCv-marker.gif" width="50%" height="50%" alt="marker.gif" />
 </p>
-
