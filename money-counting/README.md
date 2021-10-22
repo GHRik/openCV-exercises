@@ -21,13 +21,13 @@ In this place you will find how to count object on the images. The most easier e
 7. Count edge
 8. Print how much is object on image
 
-Okey so now step to step:
-1. Load image - it is easy , we must load image to count object on this image, nothing more to say :)
+Step by step:
+1. Load image - you must load image to count object on this image.
 <p align="center">
    <img src="https://github.com/GHRik/openCV-exercises/blob/money-counting/money-counting/images/examples/image_example.png" width="50%" height="50%" alt="money2.jpg" />
 </p>
 2. Blur image - we should have uniform coins, it means coins should have similar color in center of the money and on the edge.
-Why whe should have similary color? Look on point 4 ;).
+To get know why you need a similary color you must go throught to point 4.
 <p align="center">
    <img src="https://github.com/GHRik/openCV-exercises/blob/money-counting/money-counting/images/examples/blured.png" width="50%" height="50%" alt="blured.jpg" />
 </p>
@@ -35,7 +35,7 @@ Why whe should have similary color? Look on point 4 ;).
 <p align="center">
    <img src="https://github.com/GHRik/openCV-exercises/blob/money-counting/money-counting/images/examples/toGrey.png" width="50%" height="50%" alt="grey.jpg" />
 </p>
-4. Binarization image - it is needed to properly find contures. It is very easy to find contures in binary. In this step we can find first issue. Which binarization algorytm should i used? It is great question. It depends! From the background to money which you want to count. I think you should expirement with all of methods. The best method i think is set a very high binarization threshold and then try to decrease it. When threshold is very big we can easy separate background from our object.
+4. Binarization image - it is needed to properly find contures. It is very easy to find contures in binary. There are a lot of algorythm to binarization image. All of this algorythm is good for specific case. This step separate coins from the background to cois which you want to count.The best method i think is set a very high binarization threshold and then try to decrease it. When threshold is very big we can easy separate background from our object(assuming that the background is single-color and unchanging).
 <p align="center">
    <img src="https://github.com/GHRik/openCV-exercises/blob/money-counting/money-counting/images/examples/binary.png" width="50%" height="50%" alt="binarization.jpg" />
 </p>
@@ -43,7 +43,7 @@ Why whe should have similary color? Look on point 4 ;).
 <p align="center">
    <img src="https://github.com/GHRik/openCV-exercises/blob/money-counting/money-counting/images/examples/opening.png" width="50%" height="50%" alt="opening.jpg" />
 </p>
-6. Edge filtering - the next big issue to think about it. It a lot of edge detect algorythm which should i use? The same like above.... It depends. Experiment on your own ;).</br>
+6. Edge filtering - Same problem as binarization algorythm. There are a lot of algorythm and it is very depends which one you should use to specific case.</br>
 7. If you have a selected contures it is easy to count it</br>
 8. So the printing only left.
 
