@@ -11,9 +11,9 @@
 ## Description
 
 This repo was created to improve my OpenCV experience. In this repo i will commit a small project sperate on directory.
-Probably all of directory will have own README with theroy and how functions is implemented in code.
+All of directory will have own README with theroy and how functions is implemented in code.
 To use this repo you should have a small knownledge in image processing. For example with
-morphology operation. I suppose this repo will not be a "rocket science", so dont wory about it.
+morphology operation.
 
 <a name="tech"></a>
 ## Technology
@@ -25,19 +25,19 @@ morphology operation. I suppose this repo will not be a "rocket science", so don
 <a name="syl"></a>
 ## Sylabus
 Get knownledge of:
-1. Load image to var
+1. Load image to variable
 2. Capture frame from camera
 3. Binarization image
 4. Morphology operation(erode, dilate, open, close)
 5. Counting object on image
 6. Get contures of object
 7. Get center of the object
-8. Aruco and my own markers
+8. Locate Aruco and my own markers
 
 <a name="res"></a>
 ## Results
 
-All of the folders in this repo should have his own README.
+All of the folders in this repo have his own README.
 In README you will see:
 1. Description of the project
 2. How it works(include theory step by step)
